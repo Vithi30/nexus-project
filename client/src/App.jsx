@@ -1,0 +1,30 @@
+import React from 'react';
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/navbar/navbar.jsx';
+import Home from './pages/Home/home.jsx';
+import Register from './pages/Register/register.jsx';
+import Login from './pages/Login/login.jsx';
+import axios from 'axios';
+import {Toaster} from 'react-hot-toast'
+
+axios.defaults.baseURL='http://localhost:8000';
+axios.defaults.withCredentials =true;
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Toaster position='bottom-right' toastOptions={{duration:2000}} />
+      <div className="content">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+      </div>
+    </>
+  );
+}
+
+export default App;

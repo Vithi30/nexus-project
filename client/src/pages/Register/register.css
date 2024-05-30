@@ -1,0 +1,58 @@
+/* register.css */
+
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0b0b0b;
+    height: 10%; /* Adjust height considering the navbar height */
+    padding-top: 64px; /* Ensure content isn't hidden behind fixed navbar */
+  }
+  
+  .register h2 {
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+  }
+  
+  form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  

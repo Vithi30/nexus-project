@@ -1,0 +1,172 @@
+/* home.css */
+
+.home {
+    
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    min-height: 100vh; /* Ensure the home page covers the full viewport height */
+    background-color: #ffffff;
+    font-family: 'Georgia', serif; /* Elegant font for a restaurant theme */
+    color: #000000; /* Warm brown color */
+    box-sizing: border-box;
+    width: 100vh;
+  }
+  
+  .hero {
+    width: 100%;
+    height: 60vh;
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/ee/ab/bc/paneer-veggie-platter.jpg?w=600&h=400&s=1');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero button {
+    padding: 10px 20px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .hero button:hover {
+    background-color: #A0522D;
+  }
+  
+  .content {
+    width: 80%;
+    max-width: 1200px;
+    padding: 40px 0;
+    flex: 1; /* Ensure the content section stretches to fill the remaining space */
+    box-sizing: border-box;
+  }
+  
+  section {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .gallery .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure images wrap on smaller screens */
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Queries */
+  
+  /* Large devices (laptops/desktops, 1024px and up) */
+  @media (min-width: 1024px) {
+    
+    .hero {
+      height: 60vh;
+
+      
+    }
+  
+    .hero h1 {
+      font-size: 3rem;
+    }
+  
+    .hero p {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px to 1023px) */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .hero {
+      height: 50vh;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    .content {
+      width: 90%;
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px to 767px) */
+  @media (max-width: 767px) and (min-width: 576px) {
+    .hero {
+      height: 40vh;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .content {
+      width: 95%;
+    }
+  }
+  
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575px) {
+    .hero {
+      height: 30vh;
+    }
+  
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero p {
+      font-size: 0.9rem;
+    }
+  
+    .content {
+      width: 100%; /* Full width for small screens */
+      padding: 20px 0;
+    }
+  }
+  
